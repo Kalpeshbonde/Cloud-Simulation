@@ -84,4 +84,49 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.1</version>
+                <executions>
+                    <execution>
+                        <id>demo1</id>
+                        <configuration>
+                            <mainClass>org.cloudbus.cloudsim.examples.demo1_basic_datacenter.BasicDatacenterDemo</mainClass>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>demo2</id>
+                        <configuration>
+                            <mainClass>org.cloudbus.cloudsim.examples.demo2_network_topology.NetworkTopologyDemo</mainClass>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>demo3</id>
+                        <configuration>
+                            <mainClass>org.cloudbus.cloudsim.examples.demo3_multiple_users.MultipleUsersDemo</mainClass>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>demo4</id>
+                        <configuration>
+                            <mainClass>org.cloudbus.cloudsim.examples.demo4_dynamic_simulation.DynamicSimulationDemo</mainClass>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>demo5</id>
+                        <configuration>
+                            <mainClass>org.cloudbus.cloudsim.examples.demo5_global_manager.GlobalManagerDemo</mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>org.cloudbus.cloudsim.examples.demo1_basic_datacenter.BasicDatacenterDemo</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
